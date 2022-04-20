@@ -4,7 +4,7 @@
 #
 Name     : pypi-pyparsing
 Version  : 3.0.8
-Release  : 98
+Release  : 99
 URL      : https://files.pythonhosted.org/packages/31/df/789bd0556e65cf931a5b87b603fcf02f79ff04d5379f3063588faaf9c1e4/pyparsing-3.0.8.tar.gz
 Source0  : https://files.pythonhosted.org/packages/31/df/789bd0556e65cf931a5b87b603fcf02f79ff04d5379f3063588faaf9c1e4/pyparsing-3.0.8.tar.gz
 Summary  : pyparsing module - Classes and methods to define and execute parsing grammars
@@ -14,10 +14,10 @@ Requires: pypi-pyparsing-license = %{version}-%{release}
 Requires: pypi-pyparsing-python = %{version}-%{release}
 Requires: pypi-pyparsing-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : nose
-BuildRequires : py
 BuildRequires : pypi(flit_core)
-BuildRequires : pytest
+BuildRequires : pypi-nose
+BuildRequires : pypi-py
+BuildRequires : pypi-pytest
 
 %description
 PyParsing -- A Python Parsing Module
@@ -60,7 +60,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1650139187
+export SOURCE_DATE_EPOCH=1650498752
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
