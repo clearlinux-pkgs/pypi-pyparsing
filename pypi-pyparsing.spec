@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-pyparsing
-Version  : 3.1.0
-Release  : 109
-URL      : https://files.pythonhosted.org/packages/4f/13/28e88033cab976721512e7741000fb0635fa078045e530a91abb25aea0c0/pyparsing-3.1.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/4f/13/28e88033cab976721512e7741000fb0635fa078045e530a91abb25aea0c0/pyparsing-3.1.0.tar.gz
+Version  : 3.1.1
+Release  : 110
+URL      : https://files.pythonhosted.org/packages/37/fe/65c989f70bd630b589adfbbcd6ed238af22319e90f059946c26b4835e44b/pyparsing-3.1.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/37/fe/65c989f70bd630b589adfbbcd6ed238af22319e90f059946c26b4835e44b/pyparsing-3.1.1.tar.gz
 Summary  : pyparsing module - Classes and methods to define and execute parsing grammars
 Group    : Development/Tools
 License  : MIT
@@ -26,7 +26,7 @@ BuildRequires : pypi-pytest
 %description
 PyParsing -- A Python Parsing Module
 ====================================
-|Version| |Build Status| |Coverage| |License| |Python Versions|
+|Version| |Build Status| |Coverage| |License| |Python Versions| |Snyk Score|
 
 %package license
 Summary: license components for the pypi-pyparsing package.
@@ -56,10 +56,10 @@ python3 components for the pypi-pyparsing package.
 
 
 %prep
-%setup -q -n pyparsing-3.1.0
-cd %{_builddir}/pyparsing-3.1.0
+%setup -q -n pyparsing-3.1.1
+cd %{_builddir}/pyparsing-3.1.1
 pushd ..
-cp -a pyparsing-3.1.0 buildavx2
+cp -a pyparsing-3.1.1 buildavx2
 popd
 
 %build
@@ -67,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1687187353
+export SOURCE_DATE_EPOCH=1690817902
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
