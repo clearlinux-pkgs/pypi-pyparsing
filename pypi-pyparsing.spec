@@ -5,7 +5,7 @@
 #
 Name     : pypi-pyparsing
 Version  : 3.1.1
-Release  : 110
+Release  : 111
 URL      : https://files.pythonhosted.org/packages/37/fe/65c989f70bd630b589adfbbcd6ed238af22319e90f059946c26b4835e44b/pyparsing-3.1.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/37/fe/65c989f70bd630b589adfbbcd6ed238af22319e90f059946c26b4835e44b/pyparsing-3.1.1.tar.gz
 Summary  : pyparsing module - Classes and methods to define and execute parsing grammars
