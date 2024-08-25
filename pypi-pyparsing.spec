@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-pyparsing
-Version  : 3.1.3
-Release  : 115
-URL      : https://files.pythonhosted.org/packages/55/27/787992e6d7b74cd4db7a6a2ff860a84588073a2cfe183519f39624a95a95/pyparsing-3.1.3.tar.gz
-Source0  : https://files.pythonhosted.org/packages/55/27/787992e6d7b74cd4db7a6a2ff860a84588073a2cfe183519f39624a95a95/pyparsing-3.1.3.tar.gz
+Version  : 3.1.4
+Release  : 116
+URL      : https://files.pythonhosted.org/packages/83/08/13f3bce01b2061f2bbd582c9df82723de943784cf719a35ac886c652043a/pyparsing-3.1.4.tar.gz
+Source0  : https://files.pythonhosted.org/packages/83/08/13f3bce01b2061f2bbd582c9df82723de943784cf719a35ac886c652043a/pyparsing-3.1.4.tar.gz
 Summary  : pyparsing module - Classes and methods to define and execute parsing grammars
 Group    : Development/Tools
 License  : MIT
@@ -57,10 +57,10 @@ python3 components for the pypi-pyparsing package.
 
 
 %prep
-%setup -q -n pyparsing-3.1.3
-cd %{_builddir}/pyparsing-3.1.3
+%setup -q -n pyparsing-3.1.4
+cd %{_builddir}/pyparsing-3.1.4
 pushd ..
-cp -a pyparsing-3.1.3 buildavx2
+cp -a pyparsing-3.1.4 buildavx2
 popd
 
 %build
@@ -68,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1724572608
+export SOURCE_DATE_EPOCH=1724604503
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
